@@ -1,0 +1,6 @@
+14:59:12 [main] INFO  testcases.hybridTest - Selecting location: Belgium
+14:59:25 [main] INFO  testcases.hybridTest - Entering username: Ankitha
+14:59:37 [main] INFO  testcases.hybridTest - Select the shoe
+14:59:42 [main] INFO  testcases.hybridTest - Conforming selected shoe is same in checkout page
+20:53:34 [main] INFO  testcases.hybridTest - Selecting location: Belgium
+20:53:46 [main] INFO  testcases.hybridTest - Entering username: Ankitha
