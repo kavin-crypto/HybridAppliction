@@ -28,18 +28,11 @@ public class Listener extends appsInvoke implements ITestListener {
 
     public void onTestFailure(ITestResult result) {
         //Screenshot
-
-        extentTest.get().fail(result.getThrowable());
-        WebDriver driver = null;
-        String testMethodName = result.getMethod().getMethodName();
+        String s=result.getName();
         try {
-            driver = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
-        } catch (Exception e) {
-        }
-        try {
-            getScreenShotPath(testMethodName,driver);
-            extentTest.get().addScreenCaptureFromPath(getScreenShotPath(testMethodName, driver),result.getMethod().getMethodName());
+            appsInvoke.getScreenshot(s);
         } catch (IOException e) {
+            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 

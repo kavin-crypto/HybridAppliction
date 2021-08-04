@@ -4,3 +4,9 @@
 14:59:42 [main] INFO  testcases.hybridTest - Conforming selected shoe is same in checkout page
 20:53:34 [main] INFO  testcases.hybridTest - Selecting location: Belgium
 20:53:46 [main] INFO  testcases.hybridTest - Entering username: Ankitha
+20:53:56 [main] INFO  testcases.hybridTest - Select the shoe
+20:54:00 [main] INFO  testcases.hybridTest - Conforming selected shoe is same in checkout page
+21:13:43 [main] INFO  testcases.hybridTest - Selecting location: Belgium
+21:13:55 [main] INFO  testcases.hybridTest - Entering username: Ankitha
+21:14:06 [main] INFO  testcases.hybridTest - Select the shoe
+21:14:09 [main] INFO  testcases.hybridTest - Conforming selected shoe is same in checkout page

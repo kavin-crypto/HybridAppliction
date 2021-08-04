@@ -6,7 +6,6 @@ import io.appium.java_client.android.AndroidElement;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
@@ -47,12 +46,12 @@ public class appsInvoke {
 
     }
 
-    public String getScreenShotPath(String testCaseName, WebDriver driver) throws IOException {
-        TakesScreenshot ts = (TakesScreenshot) this.driver;
-        File source = ts.getScreenshotAs(OutputType.FILE);
-        String destinationFile = System.getProperty("user.dir") + "/Screenshot/" + testCaseName + ".png";
-        FileUtils.copyFile(source, new File(destinationFile));
-        return destinationFile;
+    public static void getScreenshot(String s) throws IOException
+    {
+        File shot =	((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(shot,new File(System.getProperty("user.dir") + "/Screenshot/" + s + ".png"));
+
+
     }
 
 }
